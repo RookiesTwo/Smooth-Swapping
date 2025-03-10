@@ -90,7 +90,8 @@ public class ClickSlotPacketMixin {
             }
         }
     }
-
+    
+    @Unique
     private ItemStack smooth_Swapping$getSafeOldStack(int slot) {
         DefaultedList<ItemStack> oldStacks = SmoothSwapping.oldStacks;
         if (oldStacks == null) {
